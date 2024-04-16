@@ -2,19 +2,19 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun and friendly font */
+    background-color: #ffefd5; /* Soft peach background for a light, airy feel */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #game-container {
-    width: 340px;
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    background-color: #ffccff; /* Light pink background for the container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px; /* Rounded corners for a softer look */
     text-align: center;
 }
 
@@ -22,48 +22,48 @@ body, html {
 .board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    gap: 5px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
 .cell {
     width: 100px;
     height: 100px;
-    background-color: #dee2e6;
-    color: #495057;
+    background-color: #add8e6; /* Light blue for cells */
+    color: #00008b; /* Deep blue for text, for good contrast */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2em;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px; /* Soft rounded corners for cells */
     transition: background-color 0.3s;
 }
 
 .cell:hover {
-    background-color: #ced4da;
+    background-color: #87ceeb; /* Lighter blue on hover for interactivity */
 }
 
 /* Styling for buttons and status text */
 #restart-button {
     font-size: 1em;
     padding: 10px 20px;
-    color: white;
-    background-color: #007bff;
+    color: #ffffff;
+    background-color: #32cd32; /* Bright green for visibility and appeal */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #restart-button:hover {
-    background-color: #0056b3;
+    background-color: #228b22; /* Darker green on hover */
 }
 
 #game-status {
     margin-top: 20px;
-    color: #212529;
+    color: #ff4500; /* Orange text for excitement */
     font-size: 1.2em;
 }
 
@@ -79,8 +79,8 @@ body, html {
     }
 
     .cell {
-        height: calc(33vw - 6px);
-        width: calc(33vw - 6px);
+        height: calc(33vw - 10px);
+        width: calc(33vw - 10px);
         font-size: 1.5em;
     }
 
@@ -88,37 +88,4 @@ body, html {
         font-size: 0.8em;
         padding: 8px 16px;
     }
-}
-.modal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
